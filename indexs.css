@@ -83,22 +83,24 @@ section {
 }
 
 
-.main h2 {
-    color: #fff;
-    font-size: 2em;
-    font-weight: 500;
+h2 {
+    color: #C0C0C0; /* Silver color for the entire h2 text */
+    font-size: 3em;
 }
 
-.main h2 span {
-    display: inline-block;
-    margin-top: 10px;
-    color: #ff4e9b;
-    font-size: 2em;
-    font-weight: 600;
+h2 .omar {
+    color: #f385b8; /* Pink color for Omar */
+    font-size: 1em;
 }
+.main h3{
+    color: #C0C0C0;
+    font-size:1.5em;
+}
+
+
 
 .main h6 {
-    color: #fff;
+    color: #a59a9a;
     font-size: 1em;
     font-weight: 700;
     letter-spacing: 1px;
