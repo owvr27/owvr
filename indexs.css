@@ -10,6 +10,8 @@
 }
 
 
+
+
 header {
     background-color:#FFC0CB;
     width: 100%;
@@ -55,6 +57,31 @@ section {
     background-position: center;
     background-attachment: fixed;
 }
+
+/* For tablets and large devices */
+@media (max-width: 1024px) {
+    .main {
+        background-size: contain; /* Adjusts background size to contain within the viewport */
+        background-attachment: scroll; /* Allows background to scroll with the content */
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+    .main {
+        background-size: contain;
+        background-attachment: scroll;
+    }
+}
+
+/* For very small mobile devices */
+@media (max-width: 480px) {
+    .main {
+        background-size: contain;
+        background-attachment: scroll;
+    }
+}
+
 
 .main h2 {
     color: #fff;
