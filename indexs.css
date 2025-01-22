@@ -11,7 +11,7 @@
 
 
 header {
-    background-color: #f0f0f0;
+    background-color: #ebdddd;
     width: 100%;
     position: fixed;
     z-index: 999;
@@ -30,7 +30,7 @@ header {
 }
 
 .navigation a{
-    color: #f43aa3;
+    color: #000000;
     text-decoration: none;
     font-size: 1.1em;
     font-weight: 500;
@@ -70,9 +70,9 @@ section {
     font-weight: 600;
 }
 
-.main h3 {
+.main h4 {
     color: #fff;
-    font-size: 2em;
+    font-size: 1em;
     font-weight: 700;
     letter-spacing: 1px;
     margin-top: 10px;
@@ -134,8 +134,13 @@ section {
     transform: scale(1.1);
 }
 
+
+.card .icon:hover {
+    color: #f43a91; /* Pink color when hovered */
+}
+
 .card .icon {
-    color: #f43a91;
+    color: #000000;
     font-size: 8em;
     text-align: center;
 }
@@ -208,22 +213,17 @@ section {
     color: #f43a91;
 }
 
-.contact .icon{
+.contact .icon {
     font-size: 4.5em;
+    color: #000000; /* Default color: white */
+    transition: color 0.3s ease; /* Smooth color transition */
 }
 
-.contact .info h3 {
-    color: #000;
+.contact .icon:hover {
+    color: #f43a91; /* Pink color when hovered */
 }
 
-.contact .info p {
-    font-size: 1.5em;
-}
-.contact {
-    display: flex;
-    justify-content: center; /* Centers the card horizontally */
-    align-items: center; /* Centers the card vertically */
-  }
+
 
 .footer {
     background-color: #000016;
@@ -308,3 +308,52 @@ section {
      
     }
 }
+
+/* General styling for the section title */
+.skill-title {
+    font-size: 36px; /* Default font size */
+    font-weight: bold;
+    color: #FF1493; /* Matches the pink color of your "Projects" title */
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .skills-container i {
+        font-size: 56px; /* Slightly smaller for tablet screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-container i {
+        font-size: 48px; /* Adjusted for mobile screens */
+    }
+}
+
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px; /* Increased the space between icons */
+    margin-top: 20px;
+}
+
+
+.skills-container i {
+    font-size: 64px;
+    color: #333;
+    transition: transform 0.3s ease, color 0.3s ease;
+    margin: 0 20px; /* Add horizontal spacing between icons */
+}
+
+
+
+.skills-container i:hover {
+    color: #ff0090;  /* Example hover color */
+    transform: scale(1.2);  /* Larger hover effect */
+}
+
+
