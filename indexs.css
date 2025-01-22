@@ -85,7 +85,7 @@ section {
 
 .main h2 {
     color: #fff;
-    font-size: 1.4em;
+    font-size: 2em;
     font-weight: 500;
 }
 
@@ -93,11 +93,11 @@ section {
     display: inline-block;
     margin-top: 10px;
     color: #ff4e9b;
-    font-size: 3em;
+    font-size: 2em;
     font-weight: 600;
 }
 
-.main h4 {
+.main h6 {
     color: #fff;
     font-size: 1em;
     font-weight: 700;
