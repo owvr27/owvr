@@ -1,153 +1,372 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="images/whale.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/devicon@2.15.1/devicon.min.css">
-    <link rel="stylesheet" href="indexs.css">
-    <title>Omar Abdelsalam</title>
-</head>
-<body>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-    <header>
-        <a href="#" class="logo">OMAR</a>
-        <nav class="navigation">
-            <a href="#services">About Me</a>
-            <a href="#projects">Projects</a>
-            <a href="#skills-section">Skills</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+* {
+    font-family: url(fonts/VIRUST.ttf), Bell MT , sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth; 
+}
 
-    <section class="main">
-        <div>
-            <h2>Hi, <span class="omar">Omar</span> Here...</h2>
-            <h3>I Create Stuff Sometimes...</h3>
-            <h6>I'm a software engineer and artist based in Egypt. I have profound interest in machine learning, human-computer interaction, web development, and everything in between.</h6>
-            <a href="#projects" class="main-btn">See my work</a>
-            <div class="social-icons">
-                <a href="https://www.linkedin.com/in/omar-abdelsalam-29276a341" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://www.tiktok.com/@owvr._.27" target="_blank"><i class="fab fa-tiktok"></i></a>
-                <a href="https://www.instagram.com/owvr_27/" target="_blank"><i class="fab fa-instagram"></i></a>
-            </div>
-        </div>
-    </section>
+/* Header Styling */
+header {
+    background-color: #FFC0CB;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+}
 
-    <section class="cards" id="services">
-        <h2 class="title">About Me</h2>
-        <div class="content">
-            <div class="card">
-                <div class="icon"><i class="fas fa-edit"></i></div>
-                <div class="info">
-                    <h3>Advice</h3>
-                    <p>Stay Curious: Never stop learning. Embrace new experiences and knowledge with an open mind.<br><br>
-                        Practice Gratitude: Regularly acknowledge what you're thankful for. This can shift your perspective and improve your overall well-being.<br><br>
-                        Build Strong Relationships: Surround yourself with positive and supportive people who uplift and encourage you.<br><br>
-                        Take Care of Yourself: Prioritize your physical, mental, and emotional health. Exercise, eat well, and find activities that help you relax and recharge.<br><br>
-                        Embrace Failure: Understand that failure is a part of the journey. Learn from your mistakes and keep moving forward.</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="icon"><i class="fas fa-cube"></i></div>
-                <div class="info">
-                    <h3>CV</h3>
-                    <p>Omar Ahmed Abdelsalam<br>Email: owvr.vhmed@gmail.com<br>Location: Egypt<br><br>
-                        Personal Statement: Aspiring machine learning engineer with a strong background in AI and data science. Graduated with a bachelor's degree, and equipped with a diverse skill set, including programming languages, network engineering, and AutoCAD. Committed to leveraging my knowledge to create innovative solutions and achieve excellence in the field of machine learning.<br><br>
-                        Education:<br>
-                        Amity University<br>
-                        Polytechnic of Egypt University<br><br>
-                        Skills:<br>
-                        Languages: English, Arabic<br>
-                        Programming: Python, Java, C++, Basic Network<br>
-                        Web Development: HTML, CSS<br>
-                        Software: AutoCAD 2D, AutoCAD Electrical<br><br>
-                        Certifications and Awards: (CS50, Graduated from Al-Azhar Schools, Amity University, Polytechnic of Egypt University)</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="icon"><i class="fas fa-graduation-cap"></i></div>
-                <div class="info">
-                    <h3>My Education</h3>
-                    <p>My name is Omar Ahmed Abdelsalam. I graduated from Al-Azhar, and then I pursued a degree in software engineering at Amity University and Polytechnic of Egypt. While I faced some challenging times there, I also had many wonderful experiences. However, the intense study schedule was relentless—you had to study almost 24/7 to keep up. You might think I’m exaggerating, but it’s true that we had exams and assignments every single day, which forced us to constantly study.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+.logo {
+    text-decoration: none;
+    color: #f43aa7;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+    font-family: KNIGHT SOULS PERSONAL USE;
+}
 
-    <section class="projects" id="projects">
-        <h2 class="title">Projects</h2>
-        <div class="content">
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="images/photo_2025-01-19_17-10-32.jpg" alt="Library System Project">
-                </div>
-                <div class="project-info">
-                    <p class="project-category">Library System By Python</p>
-                    <strong class="project-title">
-                        <span>Library System</span>
-                        <a href="https://github.com/owvr27/LibrarySystemPY" target="_blank" class="more-details">More details</a>
-                    </strong>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="images/checklist.png" alt="To Do List Manager Project">
-                </div>
-                <div class="project-info">
-                    <p class="project-category">To Do List Manager By Python</p>
-                    <strong class="project-title">
-                        <span>To Do List Manager</span>
-                        <a href="https://github.com/owvr27/ToDoListMngerPY" target="_blank" class="more-details">More details</a>
-                    </strong>
-                </div>
-            </div>
-        </div>
-    </section>
+.navigation a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 30px;
+}
 
-    <div class="divider"></div>
+.navigation a:hover {
+    color: #fc1ca6;
+}
 
-    <section id="skills-section">
-        <h2 class="title">Skills</h2>
-        <div class="skills-container">
-            <!-- Add skills icons here -->
-            <i class="devicon-python-plain"></i>
-            <i class="devicon-html5-plain"></i>
-            <i class="devicon-css3-plain"></i>
-            <i class="fas fa-drafting-compass"></i>
-            <i class="devicon-cplusplus-plain"></i>
-            <i class="devicon-java-plain"></i>
-            <i class="devicon-git-plain"></i>
-            <i class="devicon-github-plain"></i>
-            <i class="devicon-javascript-plain"></i>
-        </div>
-    </section>
+/* Section Styling */
+section {
+    padding: 100px 200px;
+}
 
-    <section class="cards contact" id="contact">
-        <h2 class="title">Contact</h2>
-        <div class="work-together">Let's work together</div>
-        <div class="content">
-            <div class="card-container">
-                <div class="card">
-                    <div class="icon"><i class="fas fa-envelope"></i></div>
-                    <div class="info">
-                        <h3>Email</h3>
-                        <p>owvr.vhmed@gmail.com</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(images/1582.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
 
-    <footer class="footer">
-        <h6 class="footer-title"><small>© <script>document.write(new Date().getFullYear())</script> <span>Omar Ahmed Abdelsalam</span>. All Rights Reserved.</small></h6>
-        <div class="social-icons">
-            <a href="https://www.linkedin.com/in/omar-abdelsalam-29276a341" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://www.tiktok.com/@owvr._.27" target="_blank"><i class="fab fa-tiktok"></i></a>
-            <a href="https://www.instagram.com/owvr_27/" target="_blank"><i class="fab fa-instagram"></i></a>
-        </div>
-    </footer>
+h2 {
+    color: #C0C0C0; /* Silver color for the entire h2 text */
+    font-size: 3em;
+    font-family: BankGothic Lt Bt;
+}
 
-</body>
-</html>
+h2 .omar {
+    color: #f385b8; /* Pink color for Omar */
+    font-size: 1em;
+    font-family: BankGothic Lt Bt;
+
+}
+
+.main h3 {
+    color: #C0C0C0;
+    font-size: 1.5em;
+}
+
+.main h6 {
+    color: #a59a9a;
+    font-size: 1em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+/* Button Styling */
+.main-btn {
+    color: #fff;
+    background-color: #f43a91;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    transition: 0.7s ease;
+}
+
+.main-btn:hover {
+    background-color: #f43a91;
+    transform: scale(1.1);
+}
+
+/* Social Icons */
+.social-icons a {
+    color: #fff;
+    font-size: 1.7em;
+    padding-right: 30px;
+}
+
+/* Title Styling */
+.title {
+    display: flex;
+    justify-content: center;
+    color: #f43a91;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+/* Card Styling */
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #fff;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card .icon:hover {
+    color: #f43a91; /* Pink color when hovered */
+}
+
+.card .icon {
+    color: #000000;
+    font-size: 8em;
+    text-align: center;
+}
+
+.info {
+    text-align: center;
+}
+
+.info h3 {
+    color: #f43a91;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+}
+
+/* Projects Section */
+.projects {
+    background-color: #ffffff;
+}
+
+.projects .content {
+    margin-top: 30px;
+}
+
+.project-card {
+    background-color: #fff;
+    border: 1px solid #fff;
+    min-height: 14em;
+    width: 23em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.7s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.1);
+}
+
+.project-card:hover .project-image {
+    opacity: 0.9;
+}
+
+.project-image img {
+    width: 100%;
+}
+
+.project-info {
+    padding: 1em;
+}
+
+.project-category {
+    font-size: 0.8em;
+    color: #000;
+}
+
+.project-title {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+.more-details {
+    text-decoration: none;
+    color: #f43a91;
+}
+
+.more-details:hover {
+    color: #f43a91;
+}
+
+/* Contact Section */
+.contact .icon {
+    font-size: 4.5em;
+    color: #000000; /* Default color */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.contact .icon:hover {
+    color: #f43a91; /* Pink color when hovered */
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #000016;
+    color: #fff;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-container {
+    position: relative; /* Make the container a positioning context */
+}
+
+.work-together {
+    position: absolute; /* Position the text absolutely within the container */
+    top: -50px; /* Adjust this value to position the text above the card */
+    left: 0; /* Center the text horizontally */
+    text-align: center;
+}
+
+.footer-title {
+    font-size: 0.8em;
+    font-weight: 600;
+}
+
+.footer-title span {
+    color: #f43a91;
+}
+
+.footer .social-icons a {
+    font-size: 1.3em;
+    padding: 0 12px 0 0;
+}
+
+/* Skills Section */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px; /* Increased the space between icons */
+    margin-top: 20px;
+}
+
+.skills-container i {
+    font-size: 64px;
+    color: #333;
+    transition: transform 0.3s ease, color 0.3s ease;
+    margin: 0 20px; /* Add horizontal spacing between icons */
+}
+
+.skills-container i:hover {
+    color: #ff0090; /* Example hover color */
+    transform: scale(1.2); /* Larger hover effect */
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    header {
+        padding: 12px 20px;
+    }
+
+    .navigation a {
+        padding-left: 10px;
+    }
+
+    .title {
+        font-size: 1.8em;
+    }
+
+    section {
+        padding: 80px 20px;
+    }
+
+    .main-content h2 {
+        font-size: 1em;
+    }
+
+    .main-content h3 {
+        font-size: 1.6em;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main {
+        background-size: contain; /* Adjusts background size to contain within the viewport */
+        background-attachment: scroll; /* Allows background to scroll with the content */
+    }
+}
+
+@media (max-width: 768px) {
+    .skills-container i {
+        font-size: 56px; /* Slightly smaller for tablet screens */
+    }
+}
+
+@media (max-width: 641px) {
+    body {
+        font-size: 12px;
+    }
+
+    .main-content h2 {
+        font-size: 0.8em;
+    }
+
+    .main-content h3 {
+        font-size: 1.4em;
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-container i {
+        font-size: 48px; /* Adjusted for mobile screens */
+    }
+
+    .main {
+        background-size: contain;
+        background-attachment: scroll;
+    }
+}
+
+@media (max-width: 300px) {
+    body {
+        font-size: 10px;
+    }
+}
+
+/* General styling for the section title */
+.skill-title {
+    font-size: 36px; /* Default font size */
+    font-weight: bold;
+    color: #FF1493; /* Matches the pink color of your "Projects" title */
+    text-align: center;
+    margin-bottom: 20px;
+}
