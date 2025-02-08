@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@font-face {
+    font-family: 'Knight Souls Personal Use';
+    src: url('fonts/Knight_Souls_Personal_Use.otf') format('opentype');
+  }
 * {
     font-family: url(fonts/VIRUST.ttf), Bell MT , sans-serif;
     margin: 0;
@@ -22,12 +25,17 @@ header {
 
 .logo {
     text-decoration: none;
-    color: #f43aa7;
+    color: #000000;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 1.8em;
-    font-family: KNIGHT SOULS PERSONAL USE;
+    font-family: 'Knight Souls Personal Use';
 }
+.logo:hover {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow on hover */
+    color: #fc1ca6; /* Change text color on hover */
+    transition: all 0.3s ease; /* Smooth transition */
+  }
 
 .navigation a {
     color: #000000;
@@ -370,25 +378,3 @@ h2 .omar {
     text-align: center;
     margin-bottom: 20px;
 }
-::-webkit-scrollbar {
-  width: 0.88rem;
- }
- 
-::-webkit-scrollbar-track {
-  border: 7px solid #292c3b;
-  box-shadow: inset 0 0 2.5px 2px rgba(0, 0, 0, 0.5);
-  border-radius: 4px;
-  background-color: #d4d4d8;
-  }
- 
-::-webkit-scrollbar-thumb {
-  background: #999;
-  border-radius: 2px;
-}
- 
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
- 
-/* for Firefox */
- html {scrollbar-color: #9e4673 #3d4a59;} 
