@@ -1,379 +1,227 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=My+Soul&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=My+Soul&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Mono+One&display=swap');
-* {
-    font-family: url(fonts/VIRUST.ttf), Bell MT , sans-serif;
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #A31621; /* Deep Red */
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth; 
-}
-
-/* Header Styling */
-header {
-    background-color: #FFC0CB;
-    width: 100%;
-    position: fixed;
-    z-index: 999;
+    padding: 30px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 200px;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    text-align: left;
+    overflow-x: hidden;
+    overflow-y: auto;
+    transition: background-color 0.5s ease-in-out;
+    
+    /* Scrollbar Styles */
+    scrollbar-width: thin;
+    scrollbar-color: #A31621 #FCF7F8;
 }
 
-.logo {
-    text-decoration: none;
-    color: #000000;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 1.8em;
-    font-family: "Rubik Mono One";
-
-}
-.logo:hover {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow on hover */
-    color: #fc1ca6; /* Change text color on hover */
-    transition: all 0.3s ease; /* Smooth transition */
-  }
-
-.navigation a {
-    color: #000000;
-    text-decoration: none;
-    font-size: 1.1em;
-    font-weight: 500;
-    padding-left: 30px;
+/* Hide scrollbar for all browsers */
+*::-webkit-scrollbar {
+    display: none;
 }
 
-.navigation a:hover {
-    color: #fc1ca6;
+body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
 }
 
-/* Section Styling */
-section {
-    padding: 100px 200px;
+/* Headings */
+h1, h2 {
+    font-family: 'Orbitron', sans-serif;
+    color: #FCF7F8; /* Snow */
 }
 
+/* Main Section */
 .main {
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    background: url(images/1582.png) no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+    padding-left: 5%;
+    max-width: 90%;
 }
 
-h2 {
-    color: #C0C0C0; /* Silver color for the entire h2 text */
-    font-size: 3em;
-    font-family: BankGothic Lt Bt;
-}
-
-h2 .omar {
-    color: #f385b8; /* Pink color for Omar */
-    font-size: 1em;
-    font-family: BankGothic Lt Bt;
-
+.main h2 {
+    color: #FCF7F8;
+    font-size: clamp(30px, 5vw, 50px); /* Responsive font size */
+    transition: color 0.3s ease-in-out;
 }
 
 .main h3 {
-    color: #C0C0C0;
-    font-size: 1.5em;
+    color: #FCF7F8;
+    font-size: clamp(20px, 4vw, 30px);
 }
 
-.main h6 {
-    color: #a59a9a;
-    font-size: 1em;
-    font-weight: 700;
-    letter-spacing: 1px;
-    margin-top: 10px;
-    margin-bottom: 30px;
+.main p {
+    color: #FCF7F8;
+    font-size: clamp(16px, 2vw, 20px);
 }
 
-/* Button Styling */
-.main-btn {
-    color: #fff;
-    background-color: #f43a91;
+/* Highlights & Cursor */
+.highlight {
+    color: #FCF7F8;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.cursor {
+    color: #FCF7F8;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+/* Email Button */
+.mail-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: 2px solid #FCF7F8;
+    padding: 15px;
     text-decoration: none;
-    font-size: 1.1em;
-    font-weight: 600;
-    display: inline-block;
-    padding: 0.9375em 2.1875em;
-    letter-spacing: 1px;
-    border-radius: 15px;
-    margin-bottom: 40px;
-    transition: 0.7s ease;
+    color: #FCF7F8;
+    font-size: 18px;
+    transition: all 0.3s ease-in-out;
+    width: 180px;
+    height: 50px;
+    border-radius: 8px;
+    cursor: pointer;
+    position: relative;
 }
 
-.main-btn:hover {
-    background-color: #f43a91;
+.mail-btn:hover {
+    background: #FCF7F8;
+    color: #A31621;
+    transform: scale(1.05);
+}
+
+/* Navigation */
+.navigation {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    text-align: right;
+}
+
+.navigation a {
+    display: block;
+    color: #FCF7F8;
+    text-decoration: none;
+    margin-bottom: 7px;
+    position: relative;
+    transition: color 0.3s ease-in-out;
+}
+
+.navigation a:hover {
     transform: scale(1.1);
 }
 
 /* Social Icons */
+.social-icons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    gap: 15px;
+}
+
 .social-icons a {
-    color: #fff;
-    font-size: 1.7em;
-    padding-right: 30px;
+    color: #FCF7F8;
+    font-size: 24px;
+    transition: color 0.3s, transform 0.3s;
 }
 
-/* Title Styling */
-.title {
-    display: flex;
-    justify-content: center;
-    color: #f43a91;
-    font-size: 2.2em;
-    font-weight: 800;
-    margin-bottom: 30px;
-}
-
-/* Card Styling */
-.content {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.card {
-    background-color: #fff;
-    width: 21.25em;
-    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
-    border-radius: 10px;
-    padding: 25px;
-    margin: 15px;
-    transition: 0.7s ease;
-}
-
-.card:hover {
+.social-icons a:hover {
     transform: scale(1.1);
 }
 
-.card .icon:hover {
-    color: #f43a91; /* Pink color when hovered */
+/* Footer */
+footer h6 {
+    color: #FCF7F8;
+    position: absolute;
+    bottom: 10px;
+    width: 50%;
+    padding-left: 25px;
 }
 
-.card .icon {
-    color: #000000;
-    font-size: 8em;
-    text-align: center;
+/* Responsive Tree Container */
+#tree-container {
+    position: absolute;
+    top: 5vh; /* Adjust to position the tree correctly */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%; 
+    height: 30vh; /* Scales with viewport */
+    z-index: 1;
+    pointer-events: none;
+    filter: brightness(0) invert(1); /* Change tree color to Snow */
+    animation: fadeIn 1s ease-in-out;
 }
 
-.info {
-    text-align: center;
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
-.info h3 {
-    color: #f43a91;
-    font-size: 1.2em;
-    font-weight: 700;
-    margin: 10px;
-}
-
-/* Projects Section */
-.projects {
-    background-color: #ffffff;
-}
-
-.projects .content {
-    margin-top: 30px;
-}
-
-.project-card {
-    background-color: #fff;
-    border: 1px solid #fff;
-    min-height: 14em;
-    width: 23em;
-    overflow: hidden;
-    border-radius: 10px;
-    margin: 20px;
-    transition: 0.7s ease;
-}
-
-.project-card:hover {
-    transform: scale(1.1);
-}
-
-.project-card:hover .project-image {
-    opacity: 0.9;
-}
-
-.project-image img {
-    width: 100%;
-}
-
-.project-info {
-    padding: 1em;
-}
-
-.project-category {
-    font-size: 0.8em;
-    color: #000;
-}
-
-.project-title {
-    display: flex;
-    justify-content: space-between;
-    text-transform: uppercase;
-    font-weight: 800;
-    margin-top: 10px;
-}
-
-.more-details {
-    text-decoration: none;
-    color: #f43a91;
-}
-
-.more-details:hover {
-    color: #f43a91;
-}
-
-/* Contact Section */
-.contact .icon {
-    font-size: 4.5em;
-    color: #000000; /* Default color */
-    transition: color 0.3s ease; /* Smooth color transition */
-}
-
-.contact .icon:hover {
-    color: #f43a91; /* Pink color when hovered */
-}
-
-/* Footer Styling */
-.footer {
-    background-color: #000016;
-    color: #fff;
-    padding: 2em;
-    display: flex;
-    justify-content: space-between;
-}
-
-.card-container {
-    position: relative; /* Make the container a positioning context */
-}
-
-.work-together {
-    position: absolute; /* Position the text absolutely within the container */
-    top: -50px; /* Adjust this value to position the text above the card */
-    left: 0; /* Center the text horizontally */
-    text-align: center;
-}
-
-.footer-title {
-    font-size: 0.8em;
-    font-weight: 600;
-}
-
-.footer-title span {
-    color: #f43a91;
-}
-
-.footer .social-icons a {
-    font-size: 1.3em;
-    padding: 0 12px 0 0;
-}
-
-/* Skills Section */
-.skills-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px; /* Increased the space between icons */
-    margin-top: 20px;
-}
-
-.skills-container i {
-    font-size: 64px;
-    color: #333;
-    transition: transform 0.3s ease, color 0.3s ease;
-    margin: 0 20px; /* Add horizontal spacing between icons */
-}
-
-.skills-container i:hover {
-    color: #ff0090; /* Example hover color */
-    transform: scale(1.2); /* Larger hover effect */
-}
-
-/* Media Queries */
+/* Responsive Design */
 @media (max-width: 1024px) {
-    header {
-        padding: 12px 20px;
-    }
-
-    .navigation a {
-        padding-left: 10px;
-    }
-
-    .title {
-        font-size: 1.8em;
-    }
-
-    section {
-        padding: 80px 20px;
-    }
-
-    .main-content h2 {
-        font-size: 1em;
-    }
-
-    .main-content h3 {
-        font-size: 1.6em;
-    }
-
-    .content {
-        flex-direction: column;
-        align-items: center;
-    }
-
     .main {
-        background-size: contain; /* Adjusts background size to contain within the viewport */
-        background-attachment: scroll; /* Allows background to scroll with the content */
+        padding-left: 3%;
+        text-align: center;
+    }
+
+    .mail-btn {
+        width: 100%;
+    }
+
+    .navigation, .social-icons {
+        position: relative;
+        text-align: center;
+        bottom: auto;
+        right: auto;
+        margin-top: 20px;
+    }
+
+    #tree-container {
+        height: 25vh; /* Adjust height for smaller screens */
     }
 }
 
 @media (max-width: 768px) {
-    .skills-container i {
-        font-size: 56px; /* Slightly smaller for tablet screens */
-    }
-}
-
-@media (max-width: 641px) {
-    body {
-        font-size: 12px;
+    .main {
+        padding-left: 2%;
+        text-align: center;
     }
 
-    .main-content h2 {
-        font-size: 0.8em;
+    .main h2 {
+        font-size: 35px;
     }
 
-    .main-content h3 {
-        font-size: 1.4em;
+    .main h3 {
+        font-size: 22px;
+    }
+
+    .mail-btn {
+        width: 80%;
+    }
+
+    #tree-container {
+        height: 20vh;
     }
 }
 
 @media (max-width: 480px) {
-    .skills-container i {
-        font-size: 48px; /* Adjusted for mobile screens */
+    .main h2 {
+        font-size: 28px;
     }
 
-    .main {
-        background-size: contain;
-        background-attachment: scroll;
+    .main h3 {
+        font-size: 18px;
     }
-}
 
-@media (max-width: 300px) {
-    body {
-        font-size: 10px;
+    .mail-btn {
+        width: 100%;
     }
-}
-
-/* General styling for the section title */
-.skill-title {
-    font-size: 36px; /* Default font size */
-    font-weight: bold;
-    color: #FF1493; /* Matches the pink color of your "Projects" title */
-    text-align: center;
-    margin-bottom: 20px;
 }
