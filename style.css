@@ -136,4 +136,59 @@ h1, h2 {
 footer h6 {
   color: #FCF7F8;
   position: absolute;
- 
+  bottom: 10px;
+  width: 50%;
+  padding-left: 25px;
+}
+
+#tree-container {
+  position: absolute;
+  top: 5vh;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 30vh;
+  z-index: 1;
+  pointer-events: none;
+  filter: brightness(0) invert(1);
+}
+
+.intro-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#wind-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  .main {
+    padding-left: 2%;
+    text-align: center;
+  }
+
+  .main h2 {
+    font-size: 35px;
+  }
+
+  .main h3 {
+    font-size: 22px;
+  }
+
+  .mail-btn {
+    width: 80%;
+  }
+
+  #tree-container {
+    height: 20vh;
+  }
+}
